@@ -17,10 +17,12 @@ PRODUCTO(<u>id</u>, nombre, tipo, precio)
 
 EMPLEADO(<u>id</u>, nombre, primer_apellido, segundo_apellido, productividad)
 
+Para el atributo 'productividad' se añadirá un disparador para que se calcule su valor en función de datos de otras tablas, impidiendo, también, que el usuario le asigne valores.
+
 
 
 CLIENTE_TAJINASTE_PLUS(<u>id</u>, nombre, primer_apellido,segundo_apellido, bonificaciones, fecha_ingreso)
-
+Se tendría que incluir un disparador, antes de la inserción, para evitar que la fecha_ingreso sea anterior a la fecha actual
 
 PEDIDO(<u>numero_pedido</u>, fecha, id_empleado, id_cliente_plus)
 id_empleado: FOREIGN KEY de EMPLEADO(id)
