@@ -11,7 +11,7 @@ VIVERO(<u>id</u>, nombre, latitud, longitud, municipio, provincia)
 
 
 
-PRODUCTO(<u>id</u>, nombre, tipo, precio)
+PRODUCTO(<u>id</u>, nombre, tipo, precio, cantidad_stock)
 
 
 
@@ -42,6 +42,7 @@ Se tendría que incluir un disparador para evitar que un empleado durante una é
 PRODUCTO_PEDIDO(<u>numero_pedido</u>, <u>id_producto</u>, cantidad)
 numero_pedido: FOREIGN KEY de PEDIDO(numero_pedido)
 id_producto: FOREIGN KEY de PRODUCTO(id)
+Se tendría que incluir un disparador para evitar que se adquiera una cantidad de producto que no está disponible en stock
 
 
 ZONA_PRODUCTO(<u>nombre_zona</u>, <u>tipo_zona</u>, <u>id_producto</u>, cantidad)
