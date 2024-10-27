@@ -1,6 +1,7 @@
 # ABBDD_P03
 Práctica 03 - Administración de Bases de Datos
 Realizada por Andrés Hernández Ortega y Luka Kravarusic Sljapic
+Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD5LS/view?usp=sharing
 
 
 ## Modelo entidad-relación
