@@ -3,8 +3,11 @@ Práctica 03 - Administración de Bases de Datos
 Realizada por Andrés Hernández Ortega y Luka Kravarusic Sljapic
 
 
-## Tablas del Modelo Relacional
+## Modelo entidad-relación
+![Modelo entidad-relación](/Viveros.drawio.png "ER Model")
 
+
+## Tablas del Modelo Relacional
 
 **Vivero**(id, nombre, latitud, longitud, municipio, provincia)  
 - **id**: PRIMARY KEY  
