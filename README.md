@@ -45,7 +45,8 @@ Realizada por Andrés Hernández Ortega y Luka Kravarusic Sljapic
 - **id_producto**: FOREIGN KEY de `Producto(id)`  
 - Se incluirá un **disparador** para evitar que se adquiera una cantidad de producto que exceda el stock disponible.
 
-**Zona_Producto**(nombre_zona, tipo_zona, id_producto, cantidad)  
+**Zona_Producto**(nombre_zona, tipo_zona, id_producto, cantidad)
+- **(nombre_zona, tipo_zona, id_producto)**: PRIMARY KEY
 - **nombre_zona**: FOREIGN KEY de `Zona(nombre)`  
 - **tipo_zona**: FOREIGN KEY de `Zona(tipo)`  
 - **id_producto**: FOREIGN KEY de `Producto(id)`  
