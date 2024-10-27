@@ -3,49 +3,46 @@ Práctica 03 - Administración de Bases de Datos
 Realizada por Andrés Hernández Ortega y Luka Kravarusic Sljapic
 
 
-
-ZONA(<u>nombre</u>, <u>tipo</u>, latitud, longitud, productividad, id_vivero)
-id_vivero: FOREIGN KEY de VIVERO(id)
-
-VIVERO(<u>id</u>, nombre, latitud, longitud, municipio, provincia)
+## Tablas del Modelo Relacional
 
 
+**Vivero**(id, nombre, latitud, longitud, municipio, provincia)  
+- **id**: PRIMARY KEY  
 
-PRODUCTO(<u>id</u>, nombre, tipo, precio, cantidad_stock)
+**Zona**(nombre, tipo, latitud, longitud, productividad, id_vivero)  
+- **id_vivero**: FOREIGN KEY de `Vivero(id)`  
+- **(nombre, tipo)**: PRIMARY KEY
 
+**Producto**(id, nombre, tipo, precio, cantidad_stock)  
+- **id**: PRIMARY KEY  
 
+**Empleado**(id, nombre, primer_apellido, segundo_apellido, productividad)  
+- **id**: PRIMARY KEY  
+- Se añadirá un **disparador** para calcular el valor de `productividad` en función de datos de otras tablas, impidiendo también que el usuario le asigne valores.
 
-EMPLEADO(<u>id</u>, nombre, primer_apellido, segundo_apellido, productividad)
+**Cliente_Tajinaste_Plus**(id, nombre, primer_apellido, segundo_apellido, bonificaciones, fecha_ingreso)  
+- **id**: PRIMARY KEY  
+- Se incluirá un **disparador** antes de la inserción para evitar que `fecha_ingreso` sea anterior a la fecha actual.
 
-Para el atributo 'productividad' se añadirá un disparador para que se calcule su valor en función de datos de otras tablas, impidiendo, también, que el usuario le asigne valores.
+**Pedido**(numero_pedido, fecha, id_empleado, id_cliente_plus)  
+- **(numero_pedido, fecha, id_empleado, id_cliente_plus)**: PRIMARY KEY  
+- **id_empleado**: FOREIGN KEY de `Empleado(id)`  
+- **id_cliente_plus**: FOREIGN KEY de `Cliente_Tajinaste_Plus(id)` (puede ser `NULL`)  
 
+**Empleado_Zona**(id_empleado, epoca_ano, nombre_zona, tipo_zona)  
+- **(id_empleado, epoca_ano, nombre_zona, tipo_zona)**: PRIMARY KEY  
+- **id_empleado**: FOREIGN KEY de `Empleado(id)`  
+- **nombre_zona**: FOREIGN KEY de `Zona(nombre)`  
+- **tipo_zona**: FOREIGN KEY de `Zona(tipo)`  
+- Se incluirá un **disparador** para evitar que un empleado trabaje en más de una zona durante una época del año.
 
+**Producto_Pedido**(numero_pedido, id_producto, cantidad)  
+- **(numero_pedido, id_producto)**: PRIMARY KEY  
+- **numero_pedido**: FOREIGN KEY de `Pedido(numero_pedido)`  
+- **id_producto**: FOREIGN KEY de `Producto(id)`  
+- Se incluirá un **disparador** para evitar que se adquiera una cantidad de producto que exceda el stock disponible.
 
-CLIENTE_TAJINASTE_PLUS(<u>id</u>, nombre, primer_apellido,segundo_apellido, bonificaciones, fecha_ingreso)
-Se tendría que incluir un disparador, antes de la inserción, para evitar que la fecha_ingreso sea anterior a la fecha actual
-
-PEDIDO(<u>numero_pedido</u>, fecha, id_empleado, id_cliente_plus)
-id_empleado: FOREIGN KEY de EMPLEADO(id)
-id_cliente_plus: FOREIGN KEY de CLIENTE_TAJINASTE_PLUS(id)
-id_cliente_plus puede ser NULL
-
-
-
-EMPLEADO_ZONA(<u>id_empleado</u>, <u>epoca_ano</u>, <u>nombre_zona</u>, <u>tipo_zona</u>)
-id_empleado: FOREIGN KEY de EMPLEADO(id)
-nombre_zona: FOREIGN KEY de ZONA(nombre)
-tipo_zona: FOREIGN KEY de ZONA(tipo)
-Se tendría que incluir un disparador para evitar que un empleado durante una época del año pueda trabajar en más de una zona de trabajo
-
-
-
-PRODUCTO_PEDIDO(<u>numero_pedido</u>, <u>id_producto</u>, cantidad)
-numero_pedido: FOREIGN KEY de PEDIDO(numero_pedido)
-id_producto: FOREIGN KEY de PRODUCTO(id)
-Se tendría que incluir un disparador para evitar que se adquiera una cantidad de producto que no está disponible en stock
-
-
-ZONA_PRODUCTO(<u>nombre_zona</u>, <u>tipo_zona</u>, <u>id_producto</u>, cantidad)
-nombre_zona: FOREIGN KEY de ZONA(nombre)
-tipo_zona: FOREIGN KEY de ZONA(tipo)
-id_producto: FOREIGN KEY de PRODUCTO(id)
+**Zona_Producto**(nombre_zona, tipo_zona, id_producto, cantidad)  
+- **nombre_zona**: FOREIGN KEY de `Zona(nombre)`  
+- **tipo_zona**: FOREIGN KEY de `Zona(tipo)`  
+- **id_producto**: FOREIGN KEY de `Producto(id)`  
