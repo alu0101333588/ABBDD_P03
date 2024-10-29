@@ -119,4 +119,12 @@ Si eliminamos una zona, también eliminamos esa zona en la tabla ZonaProducto, p
 
 ## Inserciones fallidas
 
-
+![Vivero](/images/Captura_Fallo_Viveros.png "Tabla Vivero")
+![Zona](/images/Captura_Fallo_Zona.png "Tabla Zona")
+![Empleado](/images/Captura_Fallo_Empleado.png "Tabla Empleado")
+![Pedido](/images/Captura_Fallo_Pedido.png "Tabla Pedido")
+![Producto](/images/Captura_Fallo_Producto.png "Tabla Producto")
+![ClienteTajinastePlus](/images/Captura_Fallo_ClienteTajinastePlus.png "Tabla ClienteTajinastePlus")
+![EmpleadoZona](/images/Captura_Fallo_EmpleadoZona.png "Tabla EmpleadoZona")
+![ZonaProducto](/images/Captura_Fallo_ZonaProducto.png "Tabla ZonaProducto")
+![ProductoPedido](/images/Captura_Fallo_ProductoPedido.png "Tabla ProductoPedido")
