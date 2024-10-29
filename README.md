@@ -90,13 +90,20 @@ Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD
 ## Inserciones fallidas
 
 Si eliminamos un vivero, también eliminamos en cascada las zonas asociadas a ese vivero
+
 ![Vivero](/images/Captura_Eliminacion_Vivero.png "Eliminacion Vivero")
 
 ![ClienteTajinastePlus](/images/Captura_Eliminacion_ClienteTajinastePlus.png "Eliminacion ClienteTajinastePlus")
 
-![Vivero](/images/Captura_Eliminacion_Vivero.png "Eliminacion Vivero")
+![Empleado](/images/Captura_Eliminacion_Empleado.png "Eliminacion Empleado")
 
-![Vivero](/images/Captura_Eliminacion_Vivero.png "Eliminacion Vivero")
+![EmpleadoZona](/images/Captura_Eliminacion_EmpleadoZona.png "Eliminacion EmpleadoZona")
+
+![ProductoPedido](/images/Captura_Eliminacion_ProductoPedido_Pedido.png "Eliminacion Pedido")
+
+![ProductoPedido](/images/Captura_Eliminacion_ProductoPedido_Producto.png "Eliminacion Producto")
+
+![ZonaProducto](/images/Captura_Eliminacion_ZonaProducto.png "Eliminacion ZonaProducto")
 
 ## Eliminaciones de filas
 
