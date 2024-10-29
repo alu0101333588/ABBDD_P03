@@ -87,24 +87,36 @@ Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD
 ![ZonaProducto](/images/Captura_ZonaProducto.png "Tabla ZonaProducto")
 ![ProductoPedido](/images/Captura_ProductoPedido.png "Tabla ProductoPedido")
 
-## Inserciones fallidas
+## Eliminaciones de filas
 
 Si eliminamos un vivero, también eliminamos en cascada las zonas asociadas a ese vivero
 
 ![Vivero](/images/Captura_Eliminacion_Vivero.png "Eliminacion Vivero")
 
+Si eliminamos un cliente de Tajinaste Plus, dejamos su columna en la fila correspondiente vacía en la tabla pedido, para preservar el historial de todos los pedidos realizados
+
 ![ClienteTajinastePlus](/images/Captura_Eliminacion_ClienteTajinastePlus.png "Eliminacion ClienteTajinastePlus")
+
+Si eliminamos un empleado, dejamos su columna en la fila correspondiente vacía en la tabla pedido, para preservar el historial de todos los pedidos realizados
 
 ![Empleado](/images/Captura_Eliminacion_Empleado.png "Eliminacion Empleado")
 
+Si eliminamos un empleado, se elimina en cascada sus filas correspondientes en las zonas que esté trabajando (EmpleadoZona)
+
 ![EmpleadoZona](/images/Captura_Eliminacion_EmpleadoZona.png "Eliminacion EmpleadoZona")
+
+En caso de querer eliminar un pedido por la razón que sea, lo eliminamos también en la tabla ProductoPedido en cascada
 
 ![ProductoPedido](/images/Captura_Eliminacion_ProductoPedido_Pedido.png "Eliminacion Pedido")
 
+En el caso contrario, si eliminamos un producto de la tabla Producto, no dejamos realizar la eliminación siempre que haya filas en ProductoPedido de ese producto, para preservar el historial de pedidos realizados
+
 ![ProductoPedido](/images/Captura_Eliminacion_ProductoPedido_Producto.png "Eliminacion Producto")
+
+Si eliminamos una zona, también eliminamos esa zona en la tabla ZonaProducto, para decir que no está ofertando ningún producto a la venta.
 
 ![ZonaProducto](/images/Captura_Eliminacion_ZonaProducto.png "Eliminacion ZonaProducto")
 
-## Eliminaciones de filas
+## Inserciones fallidas
 
 
