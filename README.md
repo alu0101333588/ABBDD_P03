@@ -82,7 +82,7 @@ Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD
 ![Empleado](/images/Captura_Empleado.png "Tabla Empleado")
 ![Pedido](/images/Captura_Pedido.png "Tabla Pedido")
 ![Producto](/images/Captura_Producto.png "Tabla Producto")
-![ClienteTajinastePlus](/images/Captura_ClienteTajinastePluss.png "Tabla ClienteTajinastePlus")
+![ClienteTajinastePlus](/images/Captura_ClienteTajinastePlus.png "Tabla ClienteTajinastePlus")
 ![EmpleadoZona](/images/Captura_EmpleadoZona.png "Tabla EmpleadoZona")
 ![ZonaProducto](/images/Captura_ZonaProducto.png "Tabla ZonaProducto")
 ![ProductoPedido](/images/Captura_ProductoPedido.png "Tabla ProductoPedido")
