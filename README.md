@@ -74,3 +74,12 @@ Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD
 - En la tabla ZonaProducto, si eliminamos una zona, también eliminamos los productos en la relación entre Zona y Producto. Si queremos eliminar un producto no lo permitimos, y en caso de querer eliminar un producto de una zona, la eliminamos directamente en la relación entre Zona y Producto, esto es en la tabla ZonaProducto
     - ```FOREIGN KEY (nombre_zona, tipo_zona) REFERENCES Zona(nombre, tipo) ON DELETE CASCADE```
     - ```FOREIGN KEY (id_producto) REFERENCES Producto(id) ON DELETE RESTRICT```
+
+
+## Resultados tablas
+
+## Inserciones fallidas
+
+## Eliminaciones de filas
+
+
