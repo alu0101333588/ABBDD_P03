@@ -75,8 +75,17 @@ Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD
     - ```FOREIGN KEY (nombre_zona, tipo_zona) REFERENCES Zona(nombre, tipo) ON DELETE CASCADE```
     - ```FOREIGN KEY (id_producto) REFERENCES Producto(id) ON DELETE RESTRICT```
 
-
 ## Resultados tablas
+
+![Vivero](/images/Captura_Viveros.png "Tabla Vivero")
+![Zona](/images/Captura_Zona.png "Tabla Zona")
+![Empleado](/images/Captura_Empleado.png "Tabla Empleado")
+![Pedido](/images/Captura_Pedido.png "Tabla Pedido")
+![Producto](/images/Captura_Producto.png "Tabla Producto")
+![ClienteTajinastePlus](/images/Captura_ClienteTajinastePluss.png "Tabla ClienteTajinastePlus")
+![EmpleadoZona](/images/Captura_EmpleadoZona.png "Tabla EmpleadoZona")
+![ZonaProducto](/images/Captura_ZonaProducto.png "Tabla ZonaProducto")
+![ProductoPedido](/images/Captura_ProductoPedido.png "Tabla ProductoPedido")
 
 ## Inserciones fallidas
 
