@@ -139,7 +139,7 @@ Si intentamos insertar un producto de un tipo que no tengamos contemplado, no de
 
 ![Producto](/images/Captura_Fallo_Producto.png "Tabla Producto")
 
-Si insertamos una fecha de ingreso en la tabla ClienteTajinastePlus inferior a la fecha actual, no seguimos con la inserción
+Si insertamos una fecha de ingreso en la tabla ClienteTajinastePlus superior a la fecha actual, no seguimos con la inserción
 
 ![ClienteTajinastePlus](/images/Captura_Fallo_ClienteTajinastePlus.png "Tabla ClienteTajinastePlus")
 
