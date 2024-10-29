@@ -6,7 +6,7 @@ Proyecto Draw.io: https://drive.google.com/file/d/17MgRfRyU7QS2GPIPZw6tTKoTyzIJD
 
 
 ## Modelo entidad-relación
-![Modelo entidad-relación](/Viveros.drawio.png "ER Model")
+![Modelo entidad-relación](/images/Viveros.drawio.png "ER Model")
 
 
 ## Tablas del Modelo Relacional
