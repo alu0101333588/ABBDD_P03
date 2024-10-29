@@ -119,12 +119,38 @@ Si eliminamos una zona, también eliminamos esa zona en la tabla ZonaProducto, p
 
 ## Inserciones fallidas
 
+Si introducimos un valor fuera del rango especificado de Latitud o Longitud, no nos deja realizar la inserción
+
 ![Vivero](/images/Captura_Fallo_Viveros.png "Tabla Vivero")
+
+Si intentamos insertar un tipo de zona que no esté contemplado, o la productividad supera el 100%, no dejamos realizar la inserción
+
 ![Zona](/images/Captura_Fallo_Zona.png "Tabla Zona")
+
+Si intentamos insertar un empleado con una productividad mayor al 100%, no dejamos realizar la inserción
+
 ![Empleado](/images/Captura_Fallo_Empleado.png "Tabla Empleado")
+
+Si intentamos insertar en pedido una fila con un empleado que no exista en la tabla Empleado, no seguimos con la inserción
+
 ![Pedido](/images/Captura_Fallo_Pedido.png "Tabla Pedido")
+
+Si intentamos insertar un producto de un tipo que no tengamos contemplado, no dejamos realizar la inserción
+
 ![Producto](/images/Captura_Fallo_Producto.png "Tabla Producto")
+
+Si insertamos una fecha de ingreso en la tabla ClienteTajinastePlus inferior a la fecha actual, no seguimos con la inserción
+
 ![ClienteTajinastePlus](/images/Captura_Fallo_ClienteTajinastePlus.png "Tabla ClienteTajinastePlus")
+
+Si intentamos insertar una fila con una estación de año fuera de las habituales (Verano, Invierno, Otoño, Primavera) no dejamos realizar la inserción
+
 ![EmpleadoZona](/images/Captura_Fallo_EmpleadoZona.png "Tabla EmpleadoZona")
+
+Si intentamos insertar una cantidad menor o igual a 0 productos, rechazamos la inserción
+
 ![ZonaProducto](/images/Captura_Fallo_ZonaProducto.png "Tabla ZonaProducto")
+
+Si intentamos realizar un pedido de una cantidad de 0 o menos de un cierto producto, rechazamos la inserción
+
 ![ProductoPedido](/images/Captura_Fallo_ProductoPedido.png "Tabla ProductoPedido")
